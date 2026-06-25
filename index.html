@@ -5,6 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Meu Mundo de Colorir</title>
 <meta name="description" content="Mais de 100 atividades para imprimir em casa: colorir, treinar a escrita e aprender inglês. Seu filho longe da tela, brincando e aprendendo.">
+<link rel="icon" type="image/png" href="favicom.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@500;600;700;800&family=Nunito:wght@600;700;800;900&display=swap" rel="stylesheet">
@@ -22,17 +23,22 @@
   h1,h2,h3,.disp{font-family:'Baloo 2',cursive;line-height:1.05;letter-spacing:.3px}
   .wrap{max-width:1080px;margin:0 auto;padding:0 22px;position:relative;z-index:2}
 
+  /* ====== BARRA DE LOGO (TOPO) ====== */
+  .topbar{position:relative;z-index:3;display:flex;justify-content:center;padding:18px 22px 0}
+  .topbar img{height:74px;width:auto;filter:drop-shadow(0 6px 14px rgba(35,55,110,.22))}
+
   /* ====== BOTÃO ====== */
-  .btn{display:inline-block;background:linear-gradient(180deg,#ff7a8c,var(--coral));color:#fff;
-    text-decoration:none;font-family:'Baloo 2';font-weight:700;font-size:1.3rem;
-    padding:18px 40px;border-radius:60px;box-shadow:0 8px 0 var(--coral-esc),0 18px 30px rgba(255,93,115,.4);
-    transition:transform .12s ease, box-shadow .12s ease;position:relative}
-  .btn:hover{transform:translateY(-3px);box-shadow:0 11px 0 var(--coral-esc),0 22px 36px rgba(255,93,115,.45)}
+  .btn{display:inline-flex;flex-direction:column;align-items:center;justify-content:center;
+    background:linear-gradient(180deg,#ff7a8c,var(--coral));color:#fff;
+    text-decoration:none;font-family:'Baloo 2';font-weight:700;font-size:.98rem;line-height:1.12;
+    padding:12px 26px;border-radius:48px;box-shadow:0 6px 0 var(--coral-esc),0 13px 24px rgba(255,93,115,.4);
+    transition:transform .12s ease, box-shadow .12s ease;position:relative;text-align:center}
+  .btn:hover{transform:translateY(-3px);box-shadow:0 9px 0 var(--coral-esc),0 18px 30px rgba(255,93,115,.45)}
   .btn:active{transform:translateY(5px);box-shadow:0 3px 0 var(--coral-esc),0 10px 18px rgba(255,93,115,.4)}
-  .btn small{display:block;font-family:'Nunito';font-weight:800;font-size:.78rem;opacity:.95;margin-top:3px;letter-spacing:0}
+  .btn small{display:block;font-family:'Nunito';font-weight:800;font-size:.66rem;opacity:.95;margin-top:3px;letter-spacing:0}
   .btn.pulse{animation:pulse 2.2s ease-in-out infinite}
-  @keyframes pulse{0%,100%{box-shadow:0 8px 0 var(--coral-esc),0 18px 30px rgba(255,93,115,.4)}
-    50%{box-shadow:0 8px 0 var(--coral-esc),0 18px 44px rgba(255,93,115,.7)}}
+  @keyframes pulse{0%,100%{box-shadow:0 6px 0 var(--coral-esc),0 13px 24px rgba(255,93,115,.4)}
+    50%{box-shadow:0 6px 0 var(--coral-esc),0 13px 38px rgba(255,93,115,.7)}}
 
   /* ====== FUNDO CÉU + NUVENS + ENFEITES ====== */
   .ceu{position:fixed;inset:0;z-index:0;background:linear-gradient(180deg,var(--ceu1) 0%,var(--ceu2) 38%,var(--ceu3) 70%)}
@@ -61,7 +67,7 @@
     box-shadow:3px 0 6px rgba(0,0,0,.18)}
 
   /* ====== HERO ====== */
-  header{padding:48px 0 30px;position:relative}
+  header{padding:30px 0 30px;position:relative}
   .hero-grid{display:grid;grid-template-columns:1.05fr .95fr;gap:30px;align-items:center}
   .selo{display:inline-flex;align-items:center;gap:8px;background:#fff;color:var(--coral-esc);
     font-family:'Baloo 2';font-weight:700;font-size:.92rem;padding:9px 18px;border-radius:40px;
@@ -72,7 +78,8 @@
   .hero .lead{font-size:1.2rem;font-weight:700;color:#244;background:rgba(255,255,255,.78);
     padding:14px 18px;border-radius:18px;max-width:480px;box-shadow:0 6px 18px rgba(35,55,110,.12)}
   .hero .cta-wrap{margin-top:26px;display:flex;align-items:center;gap:18px;flex-wrap:wrap}
-  .mini-prova{font-weight:800;color:#1e5a8c;font-size:.95rem}
+  .mini-prova{display:inline-flex;align-items:center;gap:9px;font-weight:800;color:#1e5a8c;font-size:.95rem}
+  .mini-prova img{height:46px;width:auto;filter:drop-shadow(0 4px 8px rgba(35,55,110,.2))}
   .mini-prova span{color:var(--coral-esc)}
 
   .hero-livros{position:relative;height:430px}
@@ -85,7 +92,7 @@
 
   /* ====== SEÇÕES ====== */
   section{position:relative;z-index:2}
-  .painel{background:var(--creme);border-radius:42px 42px 0 0;margin-top:24px;padding:54px 0 10px;
+  .painel{background:var(--creme);border-radius:42px 42px 0 0;margin-top:36px;padding:54px 0 10px;
     box-shadow:0 -10px 40px rgba(35,55,110,.08)}
   .tag{display:block;text-align:center;color:var(--coral);font-family:'Baloo 2';font-weight:700;
     letter-spacing:2px;font-size:.9rem;text-transform:uppercase}
@@ -128,9 +135,9 @@
   .obs{color:var(--cinza);font-weight:800;margin:2px 0 18px}
   .inclui{display:flex;flex-wrap:wrap;gap:8px;justify-content:center;margin-bottom:22px}
   .inclui span{background:#eef6ff;color:#1e5a8c;font-weight:800;font-size:.82rem;padding:6px 12px;border-radius:20px}
-  .garantia{display:flex;align-items:center;gap:14px;max-width:560px;margin:24px auto 0;
-    background:#eafff2;border:2px solid #bff0d3;border-radius:20px;padding:18px 20px;text-align:left}
-  .garantia .ic{font-size:2.4rem;line-height:1}
+  .garantia{display:flex;align-items:center;gap:18px;max-width:560px;margin:24px auto 0;
+    background:#eafff2;border:2px solid #bff0d3;border-radius:20px;padding:18px 22px;text-align:left}
+  .garantia img{height:96px;width:auto;flex-shrink:0;filter:drop-shadow(0 6px 12px rgba(35,55,110,.18))}
   .garantia b{color:#1e8a52}
 
   /* FAQ */
@@ -144,7 +151,8 @@
   .faq details[open] summary:after{transform:rotate(45deg)}
   .faq p{margin-top:12px;color:#445;font-weight:700}
 
-  footer{text-align:center;padding:40px 22px 120px;color:#5a6b8c;font-weight:700;font-size:.86rem;position:relative;z-index:2}
+  footer{text-align:center;padding:40px 22px 140px;color:#5a6b8c;font-weight:700;font-size:.86rem;position:relative;z-index:2}
+  footer .foot-logo{height:58px;width:auto;margin-bottom:14px;filter:drop-shadow(0 4px 10px rgba(35,55,110,.18))}
   footer b{color:var(--tinta)}
 
   /* CTA FLUTUANTE MOBILE */
@@ -152,7 +160,7 @@
     background:linear-gradient(180deg,rgba(255,250,240,0),var(--creme) 40%);
     transform:translateY(120%);transition:transform .35s ease;display:flex;justify-content:center}
   .cta-fixo.show{transform:translateY(0)}
-  .cta-fixo .btn{width:100%;max-width:480px;font-size:1.18rem;padding:16px}
+  .cta-fixo .btn{width:100%;max-width:440px;font-size:1rem;padding:13px}
 
   /* REVEAL */
   .reveal{opacity:0;transform:translateY(28px)}
@@ -161,21 +169,25 @@
   .d1{animation-delay:.08s}.d2{animation-delay:.18s}.d3{animation-delay:.3s}.d4{animation-delay:.42s}
 
   @media(max-width:860px){
+    .topbar img{height:64px}
     .hero-grid{grid-template-columns:1fr;text-align:center}
     .hero h1{font-size:2.5rem}
     .hero .lead{margin:0 auto}
-    .hero .cta-wrap{justify-content:center}
-    .hero-livros{height:360px;margin-top:10px}
+    .hero .cta-wrap{justify-content:center;gap:14px}
+    .hero-livros{height:340px;margin-top:18px}
     .galeria{grid-template-columns:repeat(2,1fr);gap:34px 18px}
     .card-livro .livro{width:84%}
   }
   @media(max-width:520px){
+    .topbar img{height:56px}
     .hero h1{font-size:2.1rem}
     .sec-tit{font-size:1.8rem}
     .por{font-size:3.2rem}
-    .galeria{grid-template-columns:1fr 1fr;gap:26px 14px}
+    .galeria{grid-template-columns:1fr 1fr;gap:30px 16px}
     .card-livro h3{font-size:1.1rem}
     .enfeite{font-size:1.5rem}
+    .garantia{flex-direction:column;text-align:center;gap:12px}
+    .garantia img{height:88px}
   }
 </style>
 </head>
@@ -189,6 +201,11 @@
 <div class="enfeite" style="top:70%;right:8%;animation-delay:.8s">🌟</div>
 <div class="enfeite" style="top:88%;left:7%;animation-delay:2s">🎨</div>
 
+<!-- LOGO TOPO -->
+<div class="topbar">
+  <img src="logo.png" alt="Meu Mundo de Colorir">
+</div>
+
 <!-- HERO -->
 <header>
   <div class="wrap">
@@ -198,8 +215,8 @@
         <h1 class="reveal in d2">Seu filho <b>longe da tela</b>, brincando e aprendendo de verdade</h1>
         <p class="lead reveal in d3">Mais de 100 atividades para imprimir em casa quantas vezes quiser. Colorir, treinar a escrita e aprender inglês, tudo num lugar só.</p>
         <div class="cta-wrap reveal in d4">
-          <a href="LINK_DO_CHECKOUT_CAKTO" class="btn pulse">Quero garantir o meu agora<small>Acesso imediato no seu e-mail</small></a>
-          <div class="mini-prova">🛡️ <span>7 dias</span> de garantia</div>
+          <a href="LINK_DO_CHECKOUT_CAKTO" class="btn pulse">Quero garantir o meu agora</a>
+          <div class="mini-prova"><img src="7dias.png" alt="Garantia de 7 dias"><span>7 dias</span> de garantia</div>
         </div>
       </div>
       <div class="hero-livros reveal in d3">
@@ -225,7 +242,7 @@
 <!-- GALERIA -->
 <section style="background:var(--creme);padding:36px 0 30px">
   <div class="wrap">
-    <span class="tag reveal">5 edições, 1 mundo de aprender</span>
+    <span class="tag reveal">5 edições + bônus, 1 mundo de aprender</span>
     <h2 class="sec-tit reveal">Tudo o que vem dentro</h2>
     <p class="sec-sub reveal">Do menino à menina, do colorir ao primeiro abc. Divertir e ensinar na mesma atividade.</p>
     <div class="galeria">
@@ -257,7 +274,7 @@
       <div class="card-livro reveal d3" style="display:flex;align-items:center;justify-content:center">
         <div style="background:linear-gradient(160deg,#fff,#fff4d6);border:3px dashed var(--sol);border-radius:24px;padding:28px 18px">
           <div style="font-size:2.4rem">🎁</div>
-          <h3 style="color:var(--coral-esc);margin-top:8px">E ainda atualizações</h3>
+          <h3 style="color:var(--coral-esc);margin-top:8px">Bônus: atualizações</h3>
           <p>Novas edições entram pra sua coleção sem pagar de novo.</p>
         </div>
       </div>
@@ -292,10 +309,10 @@
         <span>🎨 Aventura</span><span>💖 Encantada</span><span>🦁 Bilíngue</span>
         <span>✏️ Primeiras Letras</span><span>🔢 Vamos Contar</span>
       </div>
-      <a href="LINK_DO_CHECKOUT_CAKTO" class="btn pulse">Garantir minha coleção agora<small>Você recebe os arquivos pra imprimir em casa</small></a>
+      <a href="LINK_DO_CHECKOUT_CAKTO" class="btn pulse">Garantir minha coleção agora</a>
     </div>
     <div class="garantia reveal d2">
-      <div class="ic">🛡️</div>
+      <img src="7dias.png" alt="Garantia de 7 dias de satisfação">
       <div>Você tem <b>7 dias de garantia</b>. Se não for o que esperava, devolvemos 100% do seu dinheiro, sem complicação e sem perguntas.</div>
     </div>
   </div>
@@ -315,8 +332,9 @@
 </section>
 
 <footer>
-  <b>Meu Mundo de Colorir</b> · Pagamento 100% seguro · Acesso imediato<br>
-  Dúvidas? Fale com a gente pelo e-mail de suporte.
+  <img class="foot-logo" src="logo.png" alt="Meu Mundo de Colorir">
+  <div><b>Meu Mundo de Colorir</b> · Pagamento 100% seguro · Acesso imediato<br>
+  Dúvidas? Fale com a gente pelo e-mail de suporte.</div>
 </footer>
 
 <div class="cta-fixo"><a href="LINK_DO_CHECKOUT_CAKTO" class="btn">Garantir por R$ 19,90</a></div>
