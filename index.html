@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Meu Mundo de Colorir</title>
+<meta name="description" content="Mais de 100 atividades para imprimir em casa: colorir, treinar a escrita e aprender inglês. Seu filho longe da tela, brincando e aprendendo.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@500;600;700&family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --azul:#3aa0ff; --azul-esc:#1f6fd0; --amarelo:#ffc83d; --coral:#ff6b6b;
+    --verde:#36c98d; --roxo:#9b6bff; --texto:#2b2d42; --cinza:#6b7280;
+    --bg:#fff8ee; --card:#ffffff;
+  }
+  *{margin:0;padding:0;box-sizing:border-box}
+  body{font-family:'Nunito',sans-serif;color:var(--texto);background:var(--bg);line-height:1.55}
+  h1,h2,h3,.titulo{font-family:'Fredoka',sans-serif;line-height:1.15}
+  .wrap{max-width:760px;margin:0 auto;padding:0 20px}
+  .btn{display:block;width:100%;max-width:520px;margin:18px auto 0;background:var(--coral);
+    color:#fff;text-align:center;text-decoration:none;font-family:'Fredoka',sans-serif;
+    font-weight:700;font-size:1.35rem;padding:20px 24px;border-radius:18px;
+    box-shadow:0 8px 0 #d94f4f, 0 14px 24px rgba(255,107,107,.35);transition:transform .08s}
+  .btn:active{transform:translateY(4px);box-shadow:0 4px 0 #d94f4f}
+  .btn small{display:block;font-family:'Nunito';font-weight:700;font-size:.85rem;opacity:.95;margin-top:4px}
+
+  /* HERO */
+  .hero{background:linear-gradient(160deg,#bfe3ff 0%, #fff8ee 70%);padding:38px 0 30px;text-align:center}
+  .selo{display:inline-block;background:var(--amarelo);color:#7a5200;font-family:'Fredoka';
+    font-weight:700;font-size:.85rem;padding:7px 16px;border-radius:30px;letter-spacing:.5px}
+  .hero h1{font-size:2.1rem;margin:16px 0 10px;color:var(--azul-esc)}
+  .hero h1 b{color:var(--coral)}
+  .hero p{font-size:1.12rem;color:#3a4256;max-width:560px;margin:0 auto;font-weight:600}
+  .capa-mock{width:230px;max-width:70%;margin:22px auto 0;aspect-ratio:3/4;border-radius:14px;
+    background:repeating-linear-gradient(45deg,#ffe6c2,#ffe6c2 14px,#ffd9a6 14px,#ffd9a6 28px);
+    border:3px solid #fff;box-shadow:0 14px 30px rgba(0,0,0,.18);display:flex;
+    align-items:center;justify-content:center;text-align:center;color:#a9762e;
+    font-family:'Fredoka';font-weight:600;padding:14px}
+  /* Troque o bloco .capa-mock por: <img src="capa.jpg" class="capa-img"> */
+  .capa-img{width:230px;max-width:70%;margin:22px auto 0;border-radius:14px;border:3px solid #fff;box-shadow:0 14px 30px rgba(0,0,0,.18);display:block}
+
+  section{padding:34px 0}
+  .sec-tit{font-size:1.6rem;text-align:center;margin-bottom:8px;color:var(--azul-esc)}
+  .sec-sub{text-align:center;color:var(--cinza);max-width:560px;margin:0 auto 22px;font-weight:600}
+
+  .empatia{background:#fff}
+  .empatia p{font-size:1.1rem;max-width:600px;margin:0 auto 14px}
+
+  .itens{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-top:6px}
+  .item{background:var(--card);border-radius:18px;padding:20px 16px;text-align:center;
+    box-shadow:0 6px 18px rgba(0,0,0,.06);border:2px solid #fff}
+  .item .ic{font-size:2.2rem}
+  .item h3{font-size:1.12rem;margin:8px 0 4px;color:var(--azul-esc)}
+  .item p{font-size:.96rem;color:var(--cinza);font-weight:600}
+
+  .beneficios{background:linear-gradient(160deg,#eafff5,#fff8ee)}
+  .lista{max-width:540px;margin:0 auto;list-style:none}
+  .lista li{background:#fff;border-radius:14px;padding:15px 18px 15px 52px;margin-bottom:12px;
+    position:relative;font-weight:700;box-shadow:0 4px 12px rgba(0,0,0,.05)}
+  .lista li:before{content:"✓";position:absolute;left:16px;top:50%;transform:translateY(-50%);
+    background:var(--verde);color:#fff;width:26px;height:26px;border-radius:50%;
+    display:flex;align-items:center;justify-content:center;font-weight:800}
+
+  /* OFERTA */
+  .oferta{background:#fff;text-align:center}
+  .box{max-width:520px;margin:0 auto;background:#fff;border:3px solid var(--amarelo);
+    border-radius:24px;padding:28px 22px;box-shadow:0 14px 34px rgba(0,0,0,.10)}
+  .de{color:var(--cinza);text-decoration:line-through;font-weight:700}
+  .por{font-family:'Fredoka';font-weight:700;font-size:3rem;color:var(--coral);line-height:1}
+  .por span{font-size:1.3rem;vertical-align:super}
+  .obs{color:var(--cinza);font-weight:700;margin-top:4px}
+  .garantia{display:flex;align-items:center;gap:12px;max-width:520px;margin:22px auto 0;
+    background:#eef6ff;border-radius:16px;padding:16px 18px;text-align:left}
+  .garantia .ic{font-size:2rem}
+  .garantia b{color:var(--azul-esc)}
+
+  /* FAQ */
+  .faq{background:#fff8ee}
+  details{max-width:560px;margin:0 auto 12px;background:#fff;border-radius:14px;
+    padding:16px 18px;box-shadow:0 4px 12px rgba(0,0,0,.05)}
+  summary{font-family:'Fredoka';font-weight:600;cursor:pointer;color:var(--azul-esc);font-size:1.05rem}
+  details p{margin-top:10px;color:#3a4256;font-weight:600}
+
+  footer{text-align:center;padding:28px 20px;color:var(--cinza);font-size:.85rem;font-weight:600}
+  @media(max-width:520px){ .hero h1{font-size:1.7rem} .itens{grid-template-columns:1fr} }
+</style>
+</head>
+<body>
+
+<!-- HERO -->
+<header class="hero">
+  <div class="wrap">
+    <span class="selo">+100 ATIVIDADES PARA IMPRIMIR</span>
+    <h1>Seu filho <b>longe da tela</b>, brincando e aprendendo ao mesmo tempo</h1>
+    <p>Mais de 100 atividades para imprimir em casa quantas vezes quiser. Colorir, treinar a escrita e aprender inglês, tudo num só lugar.</p>
+    <!-- TROQUE este bloco pela sua capa: <img src="capa-menino.jpg" alt="Meu Mundo de Colorir" class="capa-img"> -->
+    <div class="capa-mock">COLOQUE A CAPA DO SEU PRODUTO AQUI</div>
+    <a href="LINK_DO_CHECKOUT_CAKTO" class="btn">Quero garantir o meu agora
+      <small>Acesso imediato no seu e-mail</small></a>
+  </div>
+</header>
+
+<!-- EMPATIA -->
+<section class="empatia">
+  <div class="wrap">
+    <h2 class="sec-tit">Você reconhece essa cena?</h2>
+    <p>Seu filho passa horas grudado no celular ou no YouTube, e fica aquela sensação de que ele podia tá aproveitando melhor o tempo dele. A gente sabe como é, e não é culpa sua.</p>
+    <p>A boa notícia é que dá pra trocar um pouco dessa tela por algo que ele ama fazer e que ainda ensina de verdade.</p>
+  </div>
+</section>
+
+<!-- O QUE É -->
+<section>
+  <div class="wrap">
+    <h2 class="sec-tit">Tudo o que vem dentro</h2>
+    <p class="sec-sub">Atividades pensadas pra divertir e ensinar ao mesmo tempo, do menino à menina.</p>
+    <div class="itens">
+      <div class="item"><div class="ic">🎨</div><h3>Desenhos pra colorir</h3><p>Temas que as crianças amam, pra menino e pra menina.</p></div>
+      <div class="item"><div class="ic">✏️</div><h3>Pontilhado da escrita</h3><p>Cobrindo as letras e os números, treina a escrita brincando.</p></div>
+      <div class="item"><div class="ic">🔤</div><h3>Português e inglês</h3><p>As primeiras palavras nos dois idiomas enquanto colore.</p></div>
+      <div class="item"><div class="ic">🔢</div><h3>Contar e colorir</h3><p>Aprende os números contando e pintando.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- BENEFICIOS -->
+<section class="beneficios">
+  <div class="wrap">
+    <h2 class="sec-tit">O que muda na sua casa</h2>
+    <ul class="lista">
+      <li>Seu filho concentrado e feliz, longe da tela</li>
+      <li>Aprendendo letras, números e inglês enquanto se diverte</li>
+      <li>Você imprime quantas vezes quiser, sempre que ele quiser brincar</li>
+      <li>Uma tarde mais tranquila pra você, sem briga pra largar o celular</li>
+    </ul>
+    <a href="LINK_DO_CHECKOUT_CAKTO" class="btn">Quero isso pro meu filho
+      <small>Acesso imediato no seu e-mail</small></a>
+  </div>
+</section>
+
+<!-- OFERTA -->
+<section class="oferta">
+  <div class="wrap">
+    <h2 class="sec-tit">Receba tudo hoje</h2>
+    <div class="box">
+      <p class="de">de R$ 47,00</p>
+      <p class="por"><span>R$</span> 19<span>,90</span></p>
+      <p class="obs">pagamento único, acesso imediato</p>
+      <a href="LINK_DO_CHECKOUT_CAKTO" class="btn">Garantir meu acesso agora
+        <small>Você recebe os arquivos pra imprimir em casa</small></a>
+    </div>
+    <div class="garantia">
+      <div class="ic">🛡️</div>
+      <div>Você tem <b>7 dias de garantia</b>. Se não gostar, é só pedir o reembolso e devolvemos o seu dinheiro, sem complicação.</div>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section class="faq">
+  <div class="wrap">
+    <h2 class="sec-tit">Perguntas frequentes</h2>
+    <details><summary>Como eu recebo o material?</summary><p>Assim que o pagamento é aprovado, você recebe os arquivos no seu e-mail na hora. É só baixar e imprimir em casa.</p></details>
+    <details><summary>É impresso ou digital?</summary><p>É digital, em PDF. Você imprime em casa ou numa gráfica quantas vezes quiser, pra sempre.</p></details>
+    <details><summary>Serve pra qual idade?</summary><p>As atividades são pensadas pra crianças de 3 a 7 anos, do colorir mais simples ao treino de escrita.</p></details>
+    <details><summary>E se eu não gostar?</summary><p>Você tem 7 dias de garantia. Se não for o que esperava, devolvemos 100% do valor.</p></details>
+    <a href="LINK_DO_CHECKOUT_CAKTO" class="btn" style="margin-top:22px">Quero garantir o meu agora</a>
+  </div>
+</section>
+
+<footer>
+  Meu Mundo de Colorir · Pagamento seguro · Acesso imediato<br>
+  Em caso de dúvida, fale com a gente pelo e-mail de suporte.
+</footer>
+
+</body>
+</html>
