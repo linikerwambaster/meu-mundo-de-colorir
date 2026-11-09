@@ -3,12 +3,18 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Meu Mundo de Colorir</title>
-<meta name="description" content="Mais de 100 atividades para imprimir em casa: colorir, treinar a escrita e aprender inglês. Seu filho longe da tela, brincando e aprendendo.">
+<title>Meu Mundo de Colorir | 87 atividades para imprimir em casa</title>
+<meta name="description" content="87 atividades prontas para imprimir em casa: desenhos para colorir, letras, números e primeiras palavras em inglês. Coleção digital em PDF por R$ 19,90.">
+<meta property="og:title" content="Meu Mundo de Colorir: 87 atividades para imprimir em casa">
+<meta property="og:description" content="Menos tela e mais lápis de cor nas férias. 5 edições em PDF por R$ 19,90.">
+<meta property="og:image" content="https://meu-mundo-de-colorir-5r2b.vercel.app/img/encantada.webp">
+<meta property="og:type" content="website">
 <link rel="icon" type="image/png" href="favicom.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@500;600;700;800&family=Nunito:wght@600;700;800;900&display=swap" rel="stylesheet">
+<link rel="preload" as="image" href="img/encantada.webp">
+<!-- PIXEL DA META: entra aqui quando o ID chegar -->
 <style>
   :root{
     --ceu1:#6cc4ff; --ceu2:#a9e1ff; --ceu3:#e8f7ff;
@@ -30,12 +36,12 @@
   /* ====== BOTÃO ====== */
   .btn{display:inline-flex;flex-direction:column;align-items:center;justify-content:center;
     background:linear-gradient(180deg,#ff7a8c,var(--coral));color:#fff;
-    text-decoration:none;font-family:'Baloo 2';font-weight:700;font-size:.98rem;line-height:1.12;
-    padding:12px 26px;border-radius:48px;box-shadow:0 6px 0 var(--coral-esc),0 13px 24px rgba(255,93,115,.4);
+    text-decoration:none;font-family:'Baloo 2';font-weight:700;font-size:1.14rem;line-height:1.12;
+    padding:15px 32px;border-radius:48px;box-shadow:0 6px 0 var(--coral-esc),0 13px 24px rgba(255,93,115,.4);
     transition:transform .12s ease, box-shadow .12s ease;position:relative;text-align:center}
   .btn:hover{transform:translateY(-3px);box-shadow:0 9px 0 var(--coral-esc),0 18px 30px rgba(255,93,115,.45)}
   .btn:active{transform:translateY(5px);box-shadow:0 3px 0 var(--coral-esc),0 10px 18px rgba(255,93,115,.4)}
-  .btn small{display:block;font-family:'Nunito';font-weight:800;font-size:.66rem;opacity:.95;margin-top:3px;letter-spacing:0}
+  .btn small{display:block;font-family:'Nunito';font-weight:800;font-size:.76rem;opacity:.95;margin-top:3px;letter-spacing:0}
   .btn.pulse{animation:pulse 2.2s ease-in-out infinite}
   @keyframes pulse{0%,100%{box-shadow:0 6px 0 var(--coral-esc),0 13px 24px rgba(255,93,115,.4)}
     50%{box-shadow:0 6px 0 var(--coral-esc),0 13px 38px rgba(255,93,115,.7)}}
@@ -130,7 +136,7 @@
     radial-gradient(circle at 88% 90%,rgba(255,93,115,.14),transparent 40%)}
   .preco-box>*{position:relative}
   .de{color:var(--cinza);text-decoration:line-through;font-weight:800;font-size:1.05rem}
-  .por{font-family:'Baloo 2';font-weight:800;font-size:4rem;color:var(--coral);line-height:.95}
+  .por{font-family:'Baloo 2';font-weight:800;font-size:4.4rem;color:var(--coral);line-height:.95}
   .por span{font-size:1.5rem;vertical-align:super}
   .obs{color:var(--cinza);font-weight:800;margin:2px 0 18px}
   .inclui{display:flex;flex-wrap:wrap;gap:8px;justify-content:center;margin-bottom:22px}
@@ -160,7 +166,7 @@
     background:linear-gradient(180deg,rgba(255,250,240,0),var(--creme) 40%);
     transform:translateY(120%);transition:transform .35s ease;display:flex;justify-content:center}
   .cta-fixo.show{transform:translateY(0)}
-  .cta-fixo .btn{width:100%;max-width:440px;font-size:1rem;padding:13px}
+  .cta-fixo .btn{width:100%;max-width:440px;font-size:1.08rem;padding:14px}
 
   /* REVEAL */
   .reveal{opacity:0;transform:translateY(28px)}
@@ -189,6 +195,104 @@
     .garantia{flex-direction:column;text-align:center;gap:12px}
     .garantia img{height:88px}
   }
+
+  /* ====== ACRÉSCIMOS DA V2 ====== */
+  .hero .lead b{color:var(--coral-esc)}
+  .btn{max-width:100%}
+  .livro .capa img{height:auto}
+  .cta-meio{text-align:center;margin-top:30px}
+  .cta-meio p{margin-top:12px;color:var(--cinza);font-weight:800;font-size:.92rem}
+  a.limpo{color:inherit;text-decoration:none;display:block}
+
+  .chips{display:flex;flex-wrap:wrap;gap:10px;margin-top:22px}
+  .chips span{background:rgba(255,255,255,.9);color:#1e5a8c;font-weight:800;font-size:.86rem;padding:7px 14px;border-radius:30px;box-shadow:0 4px 10px rgba(35,55,110,.1)}
+
+  .fala{display:inline-block;background:#fff;border:3px solid var(--sol);border-radius:26px 26px 26px 6px;padding:14px 26px;font-family:'Baloo 2';font-weight:700;font-size:2.3rem;line-height:1.1;color:var(--tinta);box-shadow:0 10px 24px rgba(35,55,110,.12);margin:12px 0 22px}
+  .empatia{text-align:center}
+  .empatia b.leve{color:var(--azul)}
+
+  /* COMPARAÇÃO */
+  .compara{display:grid;grid-template-columns:1fr 1fr;gap:18px;max-width:840px;margin:0 auto}
+  .comp{border-radius:28px;padding:26px 24px}
+  .comp h3{font-size:1.36rem;margin-bottom:10px}
+  .comp ul{list-style:none}
+  .comp li{position:relative;padding:9px 0 9px 36px;font-weight:800;font-size:1.02rem;line-height:1.35}
+  .comp li:before{position:absolute;left:0;top:9px;width:25px;height:25px;border-radius:50%;display:flex;align-items:center;justify-content:center;color:#fff;font-weight:900;font-size:.86rem}
+  .comp.nao{background:#eef0f6;color:#68718d}
+  .comp.nao h3{color:#68718d}
+  .comp.nao li:before{content:"✕";background:#a6adc2}
+  .comp.sim{background:#fff;border:4px solid var(--grama);box-shadow:0 16px 36px rgba(84,207,131,.22)}
+  .comp.sim h3{color:#1e8a52}
+  .comp.sim li:before{content:"✓";background:var(--grama)}
+
+  /* VARAL DAS FÉRIAS */
+  .varal-sec{background:linear-gradient(180deg,var(--creme),#fff6e0);padding:48px 0 44px}
+  .passos{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-bottom:12px}
+  .passo{background:#fff;border-radius:26px;padding:26px 20px 24px;text-align:center;box-shadow:0 10px 24px rgba(35,55,110,.08)}
+  .passo .num{width:54px;height:54px;border-radius:50%;background:var(--sol);color:#7a5200;font-family:'Baloo 2';font-weight:800;font-size:1.7rem;display:flex;align-items:center;justify-content:center;margin:0 auto 12px;box-shadow:0 5px 0 var(--sol-esc)}
+  .passo h3{color:var(--azul);font-size:1.3rem;margin-bottom:6px}
+  .passo p{color:#556;font-weight:700;font-size:1rem}
+  .fecho{max-width:620px;margin:24px auto 0;text-align:center;font-family:'Baloo 2';font-weight:600;font-size:1.45rem;line-height:1.22;color:var(--tinta)}
+  .fecho b{color:var(--coral-esc)}
+
+  .varal{display:grid;grid-template-columns:repeat(4,1fr);gap:26px 0;margin-top:6px}
+  .cel{position:relative;padding:18px 11px 6px}
+  .cel:before{content:"";position:absolute;left:0;right:0;top:9px;height:3px;background:#c29c6b;border-radius:2px}
+  .folha{position:relative;display:block;background:#fff;padding:7px;border-radius:4px;box-shadow:0 14px 26px rgba(35,55,110,.2);transform:rotate(var(--r,-1.6deg));transform-origin:top center;transition:transform .25s ease}
+  .folha:hover{transform:rotate(0deg) translateY(4px)}
+  .folha img{display:block;width:100%;height:auto}
+  .folha:before{content:"";position:absolute;left:50%;top:-20px;margin-left:-7px;width:14px;height:32px;border-radius:4px;background:linear-gradient(90deg,#dcb684,#b98d59 60%,#a57b49);box-shadow:0 3px 5px rgba(0,0,0,.25);z-index:2}
+
+  .card-livro .mais{display:inline-block;margin-top:9px;color:var(--coral-esc);font-weight:900;font-size:.92rem;text-decoration:none;border-bottom:2px dotted var(--coral)}
+  .card-livro .qtd{display:inline-block;background:var(--sol);color:#7a5200;font-weight:800;font-size:.76rem;padding:4px 12px;border-radius:20px;margin-top:9px}
+  .card-total{background:linear-gradient(160deg,#fff,#fff4d6);border:3px dashed var(--sol);border-radius:26px;padding:26px 16px}
+  .card-total .n{font-family:'Baloo 2';font-weight:800;font-size:3.6rem;line-height:.95;color:var(--coral)}
+  .card-total h3{margin:4px 0 6px!important;color:var(--tinta)!important}
+  .card-total .btn{margin-top:14px;font-size:1rem;padding:12px 20px}
+
+  /* ANCORAGEM */
+  .contas{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;max-width:840px;margin:0 auto}
+  .conta{background:#fff;border:3px dashed var(--sol);border-radius:26px;padding:24px 14px 20px;text-align:center}
+  .conta b{display:block;font-family:'Baloo 2';font-weight:800;font-size:2.3rem;color:var(--coral);line-height:1;margin-bottom:6px}
+  .conta i{display:block;font-style:normal;font-weight:800;color:var(--cinza);font-size:.86rem;margin-bottom:2px}
+  .conta span{font-weight:800;color:#5c6683;font-size:1rem;line-height:1.3;display:block}
+  .ancora{max-width:640px;margin:22px auto 0;text-align:center;font-weight:800;font-size:1.1rem;color:#445}
+  .ancora b{color:var(--coral-esc)}
+
+  .por-ativ{display:inline-block;background:#fff4d6;color:#7a5200;font-weight:900;font-size:.95rem;padding:6px 16px;border-radius:30px;margin:0 0 14px}
+  .topo-preco{font-family:'Baloo 2';font-weight:700;color:var(--azul);font-size:1.2rem;margin-bottom:6px}
+  .miudo{color:var(--cinza);font-weight:700;font-size:.82rem;margin-top:16px;line-height:1.4}
+
+  .ferias{background:linear-gradient(180deg,#fff2f6,#e8f7ff);padding:46px 0 40px;text-align:center}
+  .ferias p{max-width:600px;margin:0 auto 22px;font-weight:700;font-size:1.12rem;color:#445}
+
+  /* DEPOIMENTOS: só ativar com comentários reais e autorizados */
+  .depos{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+  .depo{background:#fff;border-radius:22px;padding:20px;box-shadow:0 8px 20px rgba(35,55,110,.08)}
+  .depo img{width:100%;border-radius:12px;margin-bottom:10px}
+  .depo b{display:block;color:var(--azul);margin-top:8px}
+
+  footer a{color:inherit}
+  footer .aviso{display:block;margin-top:12px;font-size:.76rem;opacity:.85}
+
+  @media(max-width:860px){
+    .chips{justify-content:center}
+    .passos{grid-template-columns:1fr}
+    .compara{grid-template-columns:1fr}
+    .varal{grid-template-columns:repeat(3,1fr)}
+    .varal .cel:nth-child(n+7){display:none}
+  }
+  @media(max-width:520px){
+    .btn{font-size:1.08rem;padding:15px 24px}
+    .fala{font-size:1.72rem;padding:12px 20px}
+    .contas{grid-template-columns:1fr}
+    .varal{grid-template-columns:repeat(2,1fr)}
+    .varal .cel:nth-child(n+5){display:none}
+    .depos{grid-template-columns:1fr}
+    .por{font-size:3.6rem}
+    .chips span{font-size:.8rem;padding:6px 11px}
+    .fecho{font-size:1.28rem}
+  }
 </style>
 </head>
 <body>
@@ -203,79 +307,173 @@
 
 <!-- LOGO TOPO -->
 <div class="topbar">
-  <img src="logo.png" alt="Meu Mundo de Colorir">
+  <img src="img/logo.webp" alt="Meu Mundo de Colorir" width="380" height="287">
 </div>
 
-<!-- HERO -->
-<header>
+<!-- HERO: eco do anúncio -->
+<header class="hero">
   <div class="wrap">
     <div class="hero-grid">
       <div>
-        <span class="selo reveal in d1">⭐ +100 atividades para imprimir</span>
-        <h1 class="reveal in d2">Seu filho <b>longe da tela</b>, brincando e aprendendo de verdade</h1>
-        <p class="lead reveal in d3">Mais de 100 atividades para imprimir em casa quantas vezes quiser. Colorir, treinar a escrita e aprender inglês, tudo num lugar só.</p>
+        <span class="selo reveal in d1">⭐ 87 atividades prontas para imprimir</span>
+        <h1 class="reveal in d2">Já imaginou as férias do seu filho com <b>menos tela</b> e mais lápis de cor?</h1>
+        <p class="lead reveal in d3">Desenhos pra colorir, letras, números e as primeiras palavras em inglês, tudo pronto em PDF. Imprimiu, entregou, ele já tem o que fazer. <b>Uma por dia dura quase 3 meses.</b></p>
         <div class="cta-wrap reveal in d4">
-          <a href="LINK_DO_CHECKOUT_CAKTO" class="btn pulse">Quero garantir o meu agora</a>
-          <div class="mini-prova"><img src="7dias.png" alt="Garantia de 7 dias"><span>7 dias</span> de garantia</div>
+          <a href="https://pay.cakto.com.br/y5cj3uk_942423" class="btn pulse">Quero as 87 atividades<small>R$ 19,90 · pagamento único</small></a>
+          <div class="mini-prova"><img src="img/selo7.webp" alt="Garantia de 7 dias" width="260" height="289"><span>7 dias</span> de garantia</div>
+        </div>
+        <div class="chips reveal in d4">
+          <span>📄 PDF pronto</span><span>🖨️ Imprime quantas vezes quiser</span><span>🧒 3 a 7 anos</span>
         </div>
       </div>
       <div class="hero-livros reveal in d3">
-        <!-- Salve as imagens das capas na MESMA pasta do index.html com estes nomes -->
-        <div class="livro hl-1"><div class="capa"><img src="encantada.png" alt="Meu Mundo de Colorir, Edição Encantada"></div></div>
-        <div class="livro hl-2"><div class="capa"><img src="aventura.png" alt="Meu Mundo de Colorir, Edição Aventura"></div></div>
-        <div class="livro hl-3"><div class="capa"><img src="bilingue.png" alt="Meu Mundo de Colorir, Edição Bilíngue"></div></div>
+        <div class="livro hl-1"><div class="capa"><img src="img/encantada.webp" alt="Meu Mundo de Colorir, Edição Encantada" width="560" height="791"></div></div>
+        <div class="livro hl-2"><div class="capa"><img src="img/aventura.webp" alt="Meu Mundo de Colorir, Edição Aventura" width="560" height="791"></div></div>
+        <div class="livro hl-3"><div class="capa"><img src="img/bilingue.webp" alt="Meu Mundo de Colorir, Edição Bilíngue" width="560" height="791"></div></div>
       </div>
     </div>
   </div>
 </header>
 
-<!-- EMPATIA -->
+<!-- CENA -->
 <section class="painel">
   <div class="wrap empatia">
     <span class="tag reveal">Você conhece essa cena?</span>
-    <h2 class="sec-tit reveal">Horas no celular, e a sensação de que ele não aprende nada</h2>
-    <p class="reveal">Seu filho passa o dia grudado no YouTube ou no joguinho, e fica aquele aperto de que ele podia tá aproveitando bem melhor esse tempo. <span class="destaque">A gente sabe como é, e não é culpa sua.</span></p>
-    <p class="reveal">Dá pra trocar um pouco dessa tela por algo que ele ama fazer e que ainda ensina de verdade.</p>
+    <div class="fala reveal">"Mãe, tô sem nada pra fazer."</div>
+    <p class="reveal">Primeiro dia de férias, dez da manhã. Ele já brincou de tudo, já rodou a casa inteira, e você ainda tem almoço, roupa e trabalho pela frente.</p>
+    <p class="reveal">Aí o celular vira a saída mais fácil. <span class="destaque">Não é culpa sua.</span> Ninguém consegue inventar uma brincadeira nova todo santo dia.</p>
+    <p class="reveal">Agora imagina a mesma manhã assim: <b class="leve">uma folha em cima da mesa, a caixa de lápis aberta e ele te perguntando de que cor pinta o dinossauro.</b></p>
+    <div class="cta-meio reveal"><a href="https://pay.cakto.com.br/y5cj3uk_942423" class="btn">Quero essa manhã aqui em casa</a></div>
   </div>
 </section>
 
-<!-- GALERIA -->
-<section style="background:var(--creme);padding:36px 0 30px">
+<!-- POR QUE O COMUM FALHA -->
+<section style="background:var(--creme);padding:48px 0 34px">
   <div class="wrap">
-    <span class="tag reveal">5 edições + bônus, 1 mundo de aprender</span>
+    <span class="tag reveal">"Mas tem desenho de graça na internet..."</span>
+    <h2 class="sec-tit reveal">Tem sim. O difícil é já ter o de amanhã pronto</h2>
+    <p class="sec-sub reveal">Achar um desenho é fácil. Achar um por dia, durante as férias inteiras, no meio da sua correria, é outra história.</p>
+    <div class="compara">
+      <div class="comp nao reveal d1">
+        <h3>Procurando na internet</h3>
+        <ul>
+          <li>Todo dia começa a busca de novo</li>
+          <li>Propaganda até chegar no desenho</li>
+          <li>Imagem que pode sair cortada ou borrada</li>
+          <li>Um desenho solto aqui, outro ali</li>
+        </ul>
+      </div>
+      <div class="comp sim reveal d2">
+        <h3>Meu Mundo de Colorir</h3>
+        <ul>
+          <li>87 atividades já separadas, é só escolher</li>
+          <li>5 edições em PDF, sem propaganda nenhuma</li>
+          <li>Página no formato da folha A4, é só imprimir</li>
+          <li>Colorir, letras, números e inglês juntos</li>
+        </ul>
+      </div>
+    </div>
+    <div class="cta-meio reveal"><a href="https://pay.cakto.com.br/y5cj3uk_942423" class="btn">Quero tudo pronto por R$ 19,90</a></div>
+  </div>
+</section>
+
+<!-- MECANISMO -->
+<section class="varal-sec">
+  <div class="wrap">
+    <span class="tag reveal">Nossa ideia pra essas férias</span>
+    <h2 class="sec-tit reveal">O Varal das Férias</h2>
+    <p class="sec-sub reveal">Uma atividade por dia. Terminou, vai pro varal.</p>
+    <div class="passos">
+      <div class="passo reveal d1"><div class="num">1</div><h3>Imprime a do dia</h3><p>Escolhe uma edição e imprime a atividade da manhã. Ou imprime várias de uma vez e deixa numa pasta.</p></div>
+      <div class="passo reveal d2"><div class="num">2</div><h3>Ele faz do jeito dele</h3><p>Colorir, cobrir o pontilhado, contar e pintar. No tempo dele, na mesa da cozinha.</p></div>
+      <div class="passo reveal d3"><div class="num">3</div><h3>Pendura no varal</h3><p>Um barbante na parede e um pregador. Cada folha pronta entra na fila.</p></div>
+    </div>
+    <p class="fecho reveal">No fim das férias, quem conta o que ele fez é <b>a parede</b>, não o histórico do YouTube.</p>
+  </div>
+</section>
+
+<!-- PÁGINAS REAIS -->
+<section style="background:#fff6e0;padding:10px 0 46px">
+  <div class="wrap">
+    <span class="tag reveal">Veja por dentro</span>
+    <h2 class="sec-tit reveal">Essas são páginas de verdade da coleção</h2>
+    <p class="sec-sub reveal">Traço grosso, desenho grande e fácil de pintar.</p>
+    <div class="varal">
+      <div class="cel reveal"><a href="https://pay.cakto.com.br/y5cj3uk_942423" class="folha" style="--r:-2deg"><img loading="lazy" src="img/p-dino.webp" alt="Dinossauro para colorir" width="440" height="622"></a></div>
+      <div class="cel reveal"><a href="https://pay.cakto.com.br/y5cj3uk_942423" class="folha" style="--r:1.6deg"><img loading="lazy" src="img/p-sereia.webp" alt="Sereia para colorir" width="440" height="622"></a></div>
+      <div class="cel reveal"><a href="https://pay.cakto.com.br/y5cj3uk_942423" class="folha" style="--r:-1.2deg"><img loading="lazy" src="img/p-letras.webp" alt="Letras para cobrir o pontilhado" width="440" height="623"></a></div>
+      <div class="cel reveal"><a href="https://pay.cakto.com.br/y5cj3uk_942423" class="folha" style="--r:2deg"><img loading="lazy" src="img/p-contar.webp" alt="Atividade de contar e colorir" width="440" height="623"></a></div>
+      <div class="cel reveal"><a href="https://pay.cakto.com.br/y5cj3uk_942423" class="folha" style="--r:1.4deg"><img loading="lazy" src="img/p-foguete.webp" alt="Foguete para colorir" width="440" height="622"></a></div>
+      <div class="cel reveal"><a href="https://pay.cakto.com.br/y5cj3uk_942423" class="folha" style="--r:-1.8deg"><img loading="lazy" src="img/p-bilingue.webp" alt="Palavras em português e inglês" width="440" height="623"></a></div>
+      <div class="cel reveal"><a href="https://pay.cakto.com.br/y5cj3uk_942423" class="folha" style="--r:1.5deg"><img loading="lazy" src="img/p-unicornio.webp" alt="Unicórnio para colorir" width="440" height="622"></a></div>
+      <div class="cel reveal"><a href="https://pay.cakto.com.br/y5cj3uk_942423" class="folha" style="--r:-1.4deg"><img loading="lazy" src="img/p-astronauta.webp" alt="Astronauta para colorir" width="440" height="622"></a></div>
+    </div>
+    <div class="cta-meio reveal"><a href="https://pay.cakto.com.br/y5cj3uk_942423" class="btn pulse">Quero imprimir essas páginas</a></div>
+  </div>
+</section>
+
+<!-- DEPOIMENTOS REAIS: ativar somente com comentários verdadeiros e com autorização de quem escreveu.
+     Para ativar, copie este bloco para fora do comentário, colocando o print real em img/ e o primeiro nome da pessoa.
+<section style="background:var(--creme);padding:46px 0 30px">
+  <div class="wrap">
+    <span class="tag">Quem já imprimiu</span>
+    <h2 class="sec-tit">O que as famílias contaram</h2>
+    <div class="depos">
+      <div class="depo"><img loading="lazy" src="img/depo1.webp" alt="Comentário de cliente"><b>Primeiro nome, cidade</b></div>
+    </div>
+    <div class="cta-meio"><a href="https://pay.cakto.com.br/y5cj3uk_942423" class="btn">Quero para o meu filho também</a></div>
+  </div>
+</section>
+-->
+
+<!-- GALERIA -->
+<section style="background:var(--creme);padding:46px 0 30px">
+  <div class="wrap">
+    <span class="tag reveal">5 edições, 87 atividades</span>
     <h2 class="sec-tit reveal">Tudo o que vem dentro</h2>
-    <p class="sec-sub reveal">Do menino à menina, do colorir ao primeiro abc. Divertir e ensinar na mesma atividade.</p>
+    <p class="sec-sub reveal">Do primeiro rabisco ao primeiro abc. Ele escolhe por onde começar.</p>
     <div class="galeria">
       <div class="card-livro reveal d1">
-        <div class="livro"><div class="capa"><img src="aventura.png" alt="Edição Aventura"></div></div>
-        <h3>Edição Aventura</h3>
-        <p>Robôs, carros, foguetes e dinossauros pra colorir. A preferida da meninada.</p>
+        <a class="limpo" href="https://pay.cakto.com.br/y5cj3uk_942423"><div class="livro"><div class="capa"><img loading="lazy" src="img/aventura.webp" alt="Edição Aventura" width="560" height="791"></div></div>
+        <h3>Edição Aventura</h3></a>
+        <span class="qtd">30 desenhos</span>
+        <p>Robôs, carros, foguete, dinossauros, bombeiro, tubarão, navio pirata e astronauta.</p>
+        <a class="mais" href="https://pay.cakto.com.br/y5cj3uk_942423">Quero a coleção</a>
       </div>
       <div class="card-livro reveal d2">
-        <div class="livro"><div class="capa"><img src="encantada.png" alt="Edição Encantada"></div></div>
-        <h3>Edição Encantada</h3>
-        <p>Ursinhos, princesas, unicórnios e fofuras pra colorir e se encantar.</p>
+        <a class="limpo" href="https://pay.cakto.com.br/y5cj3uk_942423"><div class="livro"><div class="capa"><img loading="lazy" src="img/encantada.webp" alt="Edição Encantada" width="560" height="791"></div></div>
+        <h3>Edição Encantada</h3></a>
+        <span class="qtd">30 desenhos</span>
+        <p>Sereia, princesa, fada, unicórnio, castelo, ursinhos e docinhos.</p>
+        <a class="mais" href="https://pay.cakto.com.br/y5cj3uk_942423">Quero a coleção</a>
       </div>
       <div class="card-livro reveal d3">
-        <div class="livro"><div class="capa"><img src="bilingue.png" alt="Edição Bilíngue"></div></div>
-        <h3>Edição Bilíngue</h3>
-        <p>Colorir aprendendo as primeiras palavras em português e inglês.</p>
+        <a class="limpo" href="https://pay.cakto.com.br/y5cj3uk_942423"><div class="livro"><div class="capa"><img loading="lazy" src="img/bilingue.webp" alt="Edição Bilíngue" width="560" height="791"></div></div>
+        <h3>Edição Bilíngue</h3></a>
+        <span class="qtd">10 atividades</span>
+        <p>Colorir e cobrir as primeiras palavras em português e inglês.</p>
+        <a class="mais" href="https://pay.cakto.com.br/y5cj3uk_942423">Quero a coleção</a>
       </div>
       <div class="card-livro reveal d1">
-        <div class="livro"><div class="capa"><img src="primeiras-letras.png" alt="Edição Primeiras Letras"></div></div>
-        <h3>Primeiras Letras</h3>
-        <p>Cobrir o pontilhado das letras e números pra treinar a escrita.</p>
+        <a class="limpo" href="https://pay.cakto.com.br/y5cj3uk_942423"><div class="livro"><div class="capa"><img loading="lazy" src="img/primeiras-letras.webp" alt="Edição Primeiras Letras" width="560" height="791"></div></div>
+        <h3>Primeiras Letras</h3></a>
+        <span class="qtd">8 páginas de A a Z</span>
+        <p>Cobrir o pontilhado de todo o alfabeto, letra por letra.</p>
+        <a class="mais" href="https://pay.cakto.com.br/y5cj3uk_942423">Quero a coleção</a>
       </div>
       <div class="card-livro reveal d2">
-        <div class="livro"><div class="capa"><img src="vamos-contar.png" alt="Edição Vamos Contar"></div></div>
-        <h3>Vamos Contar</h3>
-        <p>Aprender os números contando e colorindo, do 1 ao 10.</p>
+        <a class="limpo" href="https://pay.cakto.com.br/y5cj3uk_942423"><div class="livro"><div class="capa"><img loading="lazy" src="img/vamos-contar.webp" alt="Edição Vamos Contar" width="560" height="791"></div></div>
+        <h3>Vamos Contar</h3></a>
+        <span class="qtd">9 atividades</span>
+        <p>Aprender os números contando e colorindo.</p>
+        <a class="mais" href="https://pay.cakto.com.br/y5cj3uk_942423">Quero a coleção</a>
       </div>
       <div class="card-livro reveal d3" style="display:flex;align-items:center;justify-content:center">
-        <div style="background:linear-gradient(160deg,#fff,#fff4d6);border:3px dashed var(--sol);border-radius:24px;padding:28px 18px">
-          <div style="font-size:2.4rem">🎁</div>
-          <h3 style="color:var(--coral-esc);margin-top:8px">Bônus: atualizações</h3>
-          <p>Novas edições entram pra sua coleção sem pagar de novo.</p>
+        <div class="card-total">
+          <div class="n">87</div>
+          <h3>atividades numa compra só</h3>
+          <p>As 5 edições juntas, por menos de R$ 0,23 cada atividade.</p>
+          <a href="https://pay.cakto.com.br/y5cj3uk_942423" class="btn">Quero todas</a>
         </div>
       </div>
     </div>
@@ -286,33 +484,52 @@
 <section class="beneficios" style="padding:50px 0 44px">
   <div class="wrap">
     <span class="tag reveal">O que muda na sua casa</span>
-    <h2 class="sec-tit reveal">Uma troca que todo pai e mãe sente na hora</h2>
+    <h2 class="sec-tit reveal">Da próxima vez que ele disser "tô sem nada pra fazer", você já tem resposta</h2>
     <ul class="lista">
-      <li class="reveal d1">Seu filho concentrado e feliz, longe da tela</li>
-      <li class="reveal d2">Aprendendo letras, números e inglês enquanto se diverte</li>
-      <li class="reveal d3">Você imprime quantas vezes quiser, sempre que ele pedir</li>
-      <li class="reveal d4">Uma tarde mais tranquila pra você, sem briga pra largar o celular</li>
+      <li class="reveal d1">Uma atividade nova pronta toda vez que ele pedir</li>
+      <li class="reveal d2">Letras, números e palavras em inglês treinados brincando</li>
+      <li class="reveal d3">Gostou de um desenho? Imprime de novo</li>
+      <li class="reveal d4">Uma compra só serve pra todos os filhos da casa</li>
+      <li class="reveal d4">Enquanto ele pinta, você termina o que estava fazendo</li>
     </ul>
+    <div class="cta-meio reveal"><a href="https://pay.cakto.com.br/y5cj3uk_942423" class="btn">Quero a coleção completa</a></div>
+  </div>
+</section>
+
+<!-- ANCORAGEM -->
+<section style="background:var(--creme);padding:46px 0 10px">
+  <div class="wrap">
+    <span class="tag reveal">Faz a conta com a gente</span>
+    <h2 class="sec-tit reveal">Quanto vale uma manhã com lápis de cor na mão?</h2>
+    <p class="sec-sub reveal">Com a coleção, cada atividade sai por centavos.</p>
+    <div class="contas">
+      <div class="conta reveal d1"><i>sai a</i><b>R$ 3,98</b><span>por edição, levando as 5</span></div>
+      <div class="conta reveal d2"><i>menos de</i><b>R$ 0,23</b><span>por atividade</span></div>
+      <div class="conta reveal d3"><i>você paga</i><b>1 vez</b><span>e imprime sempre que quiser</span></div>
+    </div>
+    <p class="ancora reveal">Livro de colorir de papelaria acaba na última página. <b>Aqui, acabou, imprime de novo.</b> E a coleção inteira sai por menos que um lanche na rua.</p>
   </div>
 </section>
 
 <!-- OFERTA -->
-<section style="background:var(--creme);padding:50px 0 46px">
+<section id="oferta" style="background:var(--creme);padding:40px 0 46px">
   <div class="wrap oferta">
-    <span class="tag reveal">Acesso imediato</span>
+    <span class="tag reveal">Coleção digital em PDF</span>
     <h2 class="sec-tit reveal">Leve a coleção completa hoje</h2>
     <div class="preco-box reveal d1">
-      <p class="de">de R$ 47,00</p>
+      <p class="topo-preco">5 edições · 87 atividades</p>
       <p class="por"><span>R$</span>19<span>,90</span></p>
       <p class="obs">pagamento único, sem mensalidade</p>
+      <p class="por-ativ">menos de R$ 0,23 por atividade</p>
       <div class="inclui">
-        <span>🎨 Aventura</span><span>💖 Encantada</span><span>🦁 Bilíngue</span>
-        <span>✏️ Primeiras Letras</span><span>🔢 Vamos Contar</span>
+        <span>🚀 Aventura · 30</span><span>🦄 Encantada · 30</span><span>🐶 Bilíngue · 10</span>
+        <span>✏️ Primeiras Letras · 8</span><span>🔢 Vamos Contar · 9</span>
       </div>
-      <a href="LINK_DO_CHECKOUT_CAKTO" class="btn pulse">Garantir minha coleção agora</a>
+      <a href="https://pay.cakto.com.br/y5cj3uk_942423" class="btn pulse">Quero a coleção completa</a>
+      <p class="miudo">Produto digital: você recebe os PDFs e imprime em casa ou numa gráfica, nada vai pelo correio. O checkout soma R$ 0,99 de taxa de serviço.</p>
     </div>
     <div class="garantia reveal d2">
-      <img src="7dias.png" alt="Garantia de 7 dias de satisfação">
+      <img loading="lazy" src="img/selo7.webp" alt="Garantia de 7 dias de satisfação" width="260" height="289">
       <div>Você tem <b>7 dias de garantia</b>. Se não for o que esperava, devolvemos 100% do seu dinheiro, sem complicação e sem perguntas.</div>
     </div>
   </div>
@@ -323,23 +540,40 @@
   <div class="wrap">
     <span class="tag reveal">Tirando suas dúvidas</span>
     <h2 class="sec-tit reveal">Perguntas frequentes</h2>
-    <details class="reveal d1"><summary>Como eu recebo o material?</summary><p>Assim que o pagamento é aprovado, você recebe os arquivos no seu e-mail na hora. É só baixar e imprimir em casa.</p></details>
-    <details class="reveal d2"><summary>É impresso ou digital?</summary><p>É digital, em PDF. Você imprime em casa ou numa gráfica quantas vezes quiser, pra sempre.</p></details>
-    <details class="reveal d3"><summary>Serve pra qual idade?</summary><p>As atividades são pensadas pra crianças de 3 a 7 anos, do colorir mais simples ao treino de escrita.</p></details>
-    <details class="reveal d4"><summary>E se eu não gostar?</summary><p>Você tem 7 dias de garantia. Se não for o que esperava, devolvemos 100% do valor.</p></details>
-    <div style="text-align:center;margin-top:28px" class="reveal"><a href="LINK_DO_CHECKOUT_CAKTO" class="btn">Quero garantir o meu agora</a></div>
+    <details class="reveal d1"><summary>Como eu recebo o material?</summary><p>Assim que o pagamento é aprovado, o acesso aos PDFs chega no e-mail que você usou na compra. É só baixar e imprimir.</p></details>
+    <details class="reveal d2"><summary>É impresso ou digital?</summary><p>É digital, em PDF. Nada vai pelo correio. Você imprime em casa ou numa gráfica, quantas vezes quiser.</p></details>
+    <details class="reveal d3"><summary>Não tenho impressora, e agora?</summary><p>Sem problema. Salva o PDF no celular e leva numa papelaria ou gráfica perto de casa. Dá pra imprimir só as páginas que quiser.</p></details>
+    <details class="reveal d4"><summary>Tenho mais de um filho. Preciso comprar de novo?</summary><p>Não. Com uma compra você imprime pra todos os filhos da casa, quantas vezes precisar.</p></details>
+    <details class="reveal d1"><summary>Serve pra qual idade?</summary><p>As atividades são pensadas pra crianças de 3 a 7 anos, do colorir mais simples ao treino de escrita.</p></details>
+    <details class="reveal d2"><summary>Quantas atividades são, no total?</summary><p>87: 30 desenhos da Aventura, 30 da Encantada, 10 da Bilíngue, 8 páginas de letras e 9 de números.</p></details>
+    <details class="reveal d3"><summary>E se eu não gostar?</summary><p>Você tem 7 dias de garantia. Se não for o que esperava, devolvemos 100% do valor.</p></details>
+    <div class="cta-meio reveal"><a href="https://pay.cakto.com.br/y5cj3uk_942423" class="btn">Quero as 87 atividades</a></div>
+  </div>
+</section>
+
+<!-- FECHAMENTO -->
+<section class="ferias">
+  <div class="wrap">
+    <span class="tag reveal">Antes que a escola acabe</span>
+    <h2 class="sec-tit reveal">As férias estão chegando. O seu varal já pode estar pronto.</h2>
+    <p class="reveal">Natal, Ano Novo, viagem pra casa da vó, dia de chuva. Imprime agora, deixa a pasta na gaveta e, no primeiro "tô sem nada pra fazer", você já sabe o que entregar.</p>
+    <a href="https://pay.cakto.com.br/y5cj3uk_942423" class="btn pulse reveal">Quero deixar pronto por R$ 19,90</a>
   </div>
 </section>
 
 <footer>
-  <img class="foot-logo" src="logo.png" alt="Meu Mundo de Colorir">
-  <div><b>Meu Mundo de Colorir</b> · Pagamento 100% seguro · Acesso imediato<br>
-  Dúvidas? Fale com a gente pelo e-mail de suporte.</div>
+  <img class="foot-logo" loading="lazy" src="img/logo.webp" alt="Meu Mundo de Colorir" width="380" height="287">
+  <div><b>Meu Mundo de Colorir</b> · Pagamento seguro pela Cakto · Produto digital em PDF<br>
+  Dúvidas? <a href="mailto:contato@empresarialdigitallk.org">contato@empresarialdigitallk.org</a>
+  <span class="aviso">Este site não é afiliado ao Facebook ou Instagram e não é endossado pela Meta.</span></div>
 </footer>
 
-<div class="cta-fixo"><a href="LINK_DO_CHECKOUT_CAKTO" class="btn">Garantir por R$ 19,90</a></div>
+<div class="cta-fixo"><a href="https://pay.cakto.com.br/y5cj3uk_942423" class="btn">Quero por R$ 19,90</a></div>
 
 <script>
+  // Leva as UTMs do anúncio para o checkout
+  (function(){var q=location.search.slice(1);if(!q)return;
+    document.querySelectorAll('a[href*="pay.cakto.com.br"]').forEach(function(a){a.href+=(a.href.indexOf('?')<0?'?':'&')+q})})();
   // Reveal ao rolar
   var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}})},{threshold:.14});
   document.querySelectorAll('.reveal:not(.in)').forEach(function(el){io.observe(el)});
