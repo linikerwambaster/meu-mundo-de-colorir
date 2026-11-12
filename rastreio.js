@@ -144,6 +144,7 @@
       "transform:translateY(130%);transition:transform .4s cubic-bezier(.2,.8,.2,1)}" +
       ".mmc-aviso.mostra{transform:none}" +
       ".mmc-aviso-aberto .cta-fixo{display:none!important}" +
+      "@media(min-width:940px){.mmc-aviso{left:auto;right:18px;bottom:18px;max-width:400px;margin:0}}" +
       ".mmc-aviso p{margin:0 0 12px}" +
       ".mmc-aviso a{color:#ffc83d;font-weight:800}" +
       ".mmc-aviso .mmc-botoes{display:flex;gap:10px}" +
