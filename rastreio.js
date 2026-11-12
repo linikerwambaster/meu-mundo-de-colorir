@@ -2,13 +2,15 @@
 // Aqui saem PageView, ViewContent e AddToCart (clique no botão de compra).
 // InitiateCheckout e Purchase saem da Cakto, no mesmo pixel, para não contar em dobro.
 (function () {
+  // Na prévia local não manda nada para a Meta
+  if (/^(localhost|127\.0\.0\.1|\[::1\])$/.test(location.hostname)) return;
   var PIXEL = "2203883916899528";
   var ENDPOINT = "/api/capi";
   var PRODUTO = {
     content_name: "Meu Mundo de Colorir",
     content_ids: ["meu-mundo-de-colorir"],
     content_type: "product",
-    value: 19.9,
+    value: 9.9,
     currency: "BRL"
   };
 
