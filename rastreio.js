@@ -1,7 +1,7 @@
 // Pixel da Meta e API de Conversões da página de vendas, com aviso de cookies (LGPD).
 // Nada é enviado para a Meta e nenhum cookie de anúncio é criado antes da pessoa clicar em "Aceitar".
 // Aqui saem PageView, ViewContent e AddToCart (clique no botão de compra).
-// InitiateCheckout e Purchase saem da Cakto, no mesmo pixel, para não contar em dobro.
+// InitiateCheckout e Purchase saem da Wiven, no mesmo pixel, para não contar em dobro.
 (function () {
   var LOCAL = /^(localhost|127\.0\.0\.1|\[::1\])$/.test(location.hostname); // prévia: mostra o aviso, não manda nada
   var PIXEL = "2203883916899528";
@@ -120,7 +120,7 @@
   // Clique em qualquer botão de compra
   var saindo = false;
   document.addEventListener("click", function (e) {
-    var link = e.target.closest && e.target.closest('a[href*="pay.cakto.com.br"]');
+    var link = e.target.closest && e.target.closest('a[href*="checkout.wiven.com.br"]');
     if (!link || saindo || !ligado) return;
     enviar("AddToCart", PRODUTO);
     if (LOCAL || e.ctrlKey || e.metaKey || e.shiftKey || link.target === "_blank") return;
