@@ -32,8 +32,7 @@
   .preco b{display:block;font:800 56px/1 "Baloo 2",sans-serif;color:var(--tinta)}
   .preco span{font-weight:800}
   .botoes{margin:14px 0 6px;text-align:center}
-  cakto-upsell-accept::part(button){width:100%;font:800 20px "Baloo 2",sans-serif;padding:18px 16px;border-radius:999px}
-  cakto-upsell-reject::part(button){font-family:Nunito,sans-serif;font-size:15px}
+  .botoes iframe{display:block;width:100%;min-height:150px;border:0}
   .nota{font-size:13px;text-align:center;opacity:.75;margin-top:16px}
 </style>
 </head>
@@ -65,13 +64,10 @@
   <p class="leg">Alguns dos labirintos que vêm no kit</p>
   <div class="preco"><span>Adicione ao seu pedido por</span><b>R$ 14,90</b><span>pagamento único</span></div>
   <div class="botoes">
-    <cakto-upsell-buttons>
-      <cakto-upsell-accept bg-color="#1F7A4D" text-color="#ffffff" upsell-accept-url="members_area" offer-id="mrtkxt7" app-base-url="https://app.cakto.com.br" offer-type="upsell" upsell-reject-url="members_area">Sim, quero o Kit Férias por R$ 14,90</cakto-upsell-accept>
-      <cakto-upsell-reject upsell-reject-url="members_area">Não, obrigado. Quero só o meu pedido</cakto-upsell-reject>
-    </cakto-upsell-buttons>
+    <iframe id="product-funnel-cmwy8jeng0gvy01ook9lgcte0" src="https://checkout.wiven.com.br/ext/funnel/cmwy8jeng0gvy01ook9lgcte0" width="100%" height="100%" frameborder="0" allowtransparency="true" allow="payment *"></iframe>
   </div>
   <p class="nota">Se não quiser, é só tocar em "Não, obrigado". O seu pedido já está garantido do mesmo jeito. Garantia de 7 dias também vale para o kit.</p>
 </main>
-<script type="text/javascript" src="https://caktoscripts.nyc3.cdn.digitaloceanspaces.com/upsell.js"></script>
+<script src="https://app.wiven.com.br/scripts/product-funnel.js"></script>
 </body>
 </html>
